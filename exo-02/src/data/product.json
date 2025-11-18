@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Chaussure Croco Fluo",
+    "description": "Une chaussure verte fluo avec motif crocodile",
+    "reference_code": "CM001",
+    "price": 1949.99,
+    "on_sale": true
+  },
+  {
+    "id": 2,
+    "name": "Botte Plastique Transparente",
+    "description": null,
+    "reference_code": "CM002",
+    "price": 1,
+    "on_sale": false
+  },
+  {
+    "id": 4,
+    "name": "Sneaker Paillettes Arc-en-ciel",
+    "description": "Chaussure recouverte de paillettes multicolores",
+    "reference_code": "CM003",
+    "price": 0.05,
+    "on_sale": true
+  },
+  {
+    "id": 5,
+    "name": "Sandale Fourrure Rose",
+    "description": "Sandale avec une épaisse fourrure rose",
+    "reference_code": "CM004",
+    "price": 39.90,
+    "on_sale": false
+  },
+  {
+    "id": 7,
+    "name": "Chaussure Talon Banane",
+    "description": "Talon en forme de banane jaune",
+    "reference_code": "CM005",
+    "price": 120.00,
+    "on_sale": true
+  },
+  {
+    "id": 8,
+    "name": "Mocassin Plastique Violet",
+    "description": null,
+    "reference_code": "CM006",
+    "price": 22.00,
+    "on_sale": false
+  },
+  {
+    "id": 10,
+    "name": "Basket XXL",
+    "description": "Basket volontairement disproportionnée",
+    "reference_code": "CM007",
+    "price": 89.99,
+    "on_sale": true
+  },
+  {
+    "id": 11,
+    "name": "Chaussure LED Multicolore",
+    "description": "Semelle avec lumières LED clignotantes",
+    "reference_code": "CM008",
+    "price": 59.00,
+    "on_sale": false
+  },
+  {
+    "id": 13,
+    "name": "Pantoufle Poisson",
+    "description": "Pantoufle en forme de poisson",
+    "reference_code": "CM009",
+    "price": 19.99,
+    "on_sale": true
+  },
+  {
+    "id": 15,
+    "name": "Escarpin Clown",
+    "description": null,
+    "reference_code": "CM010",
+    "price": 45.00,
+    "on_sale": false
+  }
+]
