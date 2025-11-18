@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "lastName": "Dupont",
+    "firstName": "Marie",
+    "birthDate": "1990-05-12",
+    "email": "marie.dupont@example.com"
+  },
+  {
+    "id": 2,
+    "lastName": "Martin",
+    "firstName": "Jean",
+    "birthDate": "1985-11-23",
+    "email": null
+  },
+  {
+    "id": 3,
+    "lastName": "Durand",
+    "firstName": "Sophie",
+    "birthDate": null,
+    "email": "sophie.durand@example.com"
+  },
+  {
+    "id": 4,
+    "lastName": "Lefevre",
+    "firstName": "Paul",
+    "birthDate": "2000-01-01",
+    "email": "paul.lefevre@example.com"
+  },
+  {
+    "id": 5,
+    "lastName": "Bernard",
+    "firstName": "Claire",
+    "birthDate": "1995-07-30",
+    "email": "claire.bernard@example.com"
+  }
+]

@@ -2,6 +2,9 @@ import Welcome from './components/welcome/welcome'
 import './app.css';
 import NumberTester from './components/NumberTester/NumberTester';
 import MessageDisplayer from './components/MessageDisplayer/MessageDisplayer';
+import PeopleTable from './components/PeopleTable/PeopleTable';
+
+import peopleData from './data/people.json';
 
 function App() {
 
@@ -20,6 +23,9 @@ function App() {
       <MessageDisplayer msg='Hello World' />
       {/* <MessageDisplayer msg='Je suis caché' visible={false} /> */}
       {/* <MessageDisplayer msg='' visible /> */}
+
+      <h2>Collection</h2>
+      <PeopleTable people={peopleData} />
     </>
   )
 }
