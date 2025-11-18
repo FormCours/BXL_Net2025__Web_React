@@ -1,0 +1,14 @@
+.bienvenue-msg, .bienvenue-age {
+    margin: 0;
+}
+
+.bienvenue-msg {
+    font-weight: bold;
+    font-size: 1.3em;
+    color: salmon;
+}
+
+.bienvenue-age {
+    color: goldenrod;
+    font-style: italic;
+}
