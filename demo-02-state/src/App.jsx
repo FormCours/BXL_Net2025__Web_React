@@ -1,10 +1,11 @@
 import './App.css'
+import Header from './ui/Header/Header'
 
 function App() {
 
   return (
     <> {/* ← Fragment */}
-      <h1>Demo 02</h1>
+      <Header />
     </>
   )
 }
