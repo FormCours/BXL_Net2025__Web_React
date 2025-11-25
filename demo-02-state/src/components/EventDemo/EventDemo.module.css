@@ -1,0 +1,13 @@
+
+.hover-event {
+    border: hotpink dotted 0.2ch;
+    border-radius: 1em;
+    aspect-ratio: 1/1;
+    width: 10em;
+    margin: 1ch;
+}
+
+.button-event {
+    margin: 1ch;
+    margin-top: 0;
+}
