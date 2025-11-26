@@ -50,3 +50,15 @@
     font-weight: bold;
     font-family: cursive;
 }
+
+.history {
+    max-height: 9em;
+    overflow-x: hidden;
+    overflow-y: auto;
+    flex-grow: 1;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: darkmagenta;
+}
