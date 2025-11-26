@@ -1,0 +1,52 @@
+.calculatrice {
+    border: 0.5ch hotpink solid;
+    border-radius: 1em;
+    padding: 1em;
+
+    background: linear-gradient(to right, plum 0%, pink 100%);
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5ch;
+}
+
+.calculatrice > div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 1ch;
+}
+
+.calculatrice input, .calculatrice select {
+    background: linear-gradient(to bottom left, yellowgreen 0%, palegreen 50%, lime 100%);
+    border: 0.2ch mediumspringgreen solid;
+    padding: 1ch, 0.2ch;
+    border-radius: 0.5ch;
+    color: crimson;
+    flex-grow: 1;
+}
+
+.calculatrice button {
+    flex-grow: 1;
+    padding: 0.5ch;
+    background: radial-gradient(rgba(255, 217, 0, 0.6), rgba(218, 165, 32, 0.6)),
+                linear-gradient(to top, rgba(255, 105, 180, 0.8) 0%,transparent 50%, rgba(255, 192, 203, 0.8) 100%),
+                linear-gradient(to right, lime 0%, transparent 50%, lime 100%);
+    color: darkorchid;
+    border-color: darkorchid;
+}
+
+
+.calculatrice button:hover {
+    border-color: navy;
+    color: navy;
+    background: radial-gradient(rgba(255, 217, 0, 0.8), rgba(218, 165, 32, 0.8)),
+            linear-gradient(to top, rgba(255, 105, 180, 0.8) 0%,transparent 50%, rgba(255, 192, 203, 0.8) 100%),
+            linear-gradient(to right, lime 0%, transparent 50%, lime 100%);
+}
+
+.calculatrice label, .calculatrice button {
+    color: darkcyan;
+    font-weight: bold;
+    font-family: cursive;
+}
