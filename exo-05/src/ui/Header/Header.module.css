@@ -1,0 +1,43 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    height: 5em;
+    align-items: center;
+    background: linear-gradient(140deg,
+            rgb(120, 40, 160) 0%,
+            rgb(130, 45, 170) 10%,
+            rgb(145, 50, 175) 20%,
+            rgb(160, 55, 180) 30%,
+            rgb(175, 60, 185) 40%,
+            rgb(190, 65, 190) 50%,
+            rgb(200, 70, 185) 60%,
+            rgb(210, 75, 180) 70%,
+            rgb(225, 80, 170) 80%,
+            rgb(235, 85, 160) 90%,
+            rgb(245, 90, 150) 100%);
+    padding: 1ch;
+    gap: 1em;
+    border-bottom: 0.3ch solid deeppink;
+}
+
+.header h1 {
+    font-family: DuckTales;
+    font-size: 3em;
+    color: beige;
+    text-shadow:
+        0 0 2px deeppink,
+        0 0 3px deeppink,
+        1px 1px 0 deeppink,
+        -1px 1px 0 deeppink,
+        1px -1px 0 deeppink,
+        -1px -1px 0 deeppink;
+}
+
+.header-img {
+    height: 100%;
+    border-radius: 10em;
+    border: 0.3ch solid deeppink;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: 40%;
+}
