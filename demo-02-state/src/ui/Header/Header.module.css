@@ -1,0 +1,29 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    height: 4em;
+    align-items: center;
+    width: 100dvw;
+
+    padding: 0.5ch;
+    gap: 1ch;
+
+    background-color: darkslategray;
+    color: hotpink;
+    border-bottom: 0.5ch solid hotpink;
+
+    font-family: "Jokerman";
+}
+
+.header img {
+    align-self: stretch;
+    border-radius: 1em;
+    height: 100%; /* Pour éviter le bug d'affichage sur du Chromium*/
+}
+
+.header h1 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-shadow: cyan 0.1ch 0.1ch 0.1ch;
+}

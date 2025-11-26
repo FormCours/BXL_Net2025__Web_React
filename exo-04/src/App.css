@@ -1,0 +1,18 @@
+#root {
+    display: flex;
+    flex-direction: column;
+
+    width: 80vm;
+    margin: 0 auto;
+
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+h1 {
+    background: linear-gradient(to left, aqua 0%, mintcream 25%, lime 50%, gold 75%, fuchsia 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-family: Jokerman;
+}
