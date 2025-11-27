@@ -1,0 +1,48 @@
+.task-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1ch;
+}
+
+.task-form>div {
+    display: flex;
+    flex-direction: row;
+    gap: 1ch;
+}
+
+.task-form>div>label {
+    flex-basis: 6em;
+    color: darkmagenta;
+}
+.task-form>div>label::after {
+    content: ':';
+    margin-left: 0.5ch;
+}
+
+.task-form>div>input,
+.task-form>div>textarea,
+.task-form>div>select {
+    font-family: inherit;
+    font-size: 0.9em;
+    border: darkmagenta 0.1ch solid;
+    border-radius: 0.5ch;
+    padding: 0.2ch 0.5ch;
+    color: deeppink;
+    background-color: snow;
+}
+
+.task-form>div>input,
+.task-form>div>textarea {
+    flex-grow: 1;
+    resize: none;
+}
+.task-form>div>textarea {
+    height: 5em;
+}
+.task-form>div>select {
+    flex-basis: 15em;
+}
+ 
+.task-form :global(.space) {
+    flex-grow: 1;
+}

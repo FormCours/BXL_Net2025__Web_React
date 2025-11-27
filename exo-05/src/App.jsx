@@ -1,4 +1,5 @@
 import './App.css'
+import TodoApp from './features/TodoApp/TodoApp'
 import Header from './ui/Header/Header'
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <>
       <Header/>
       <main>
+        <TodoApp />
       </main>
     </>
   )
