@@ -1,4 +1,7 @@
 .header {
+    --text-color: beige;
+    --highlight-color: deeppink;
+
     display: flex;
     flex-direction: row;
     height: 5em;
@@ -17,20 +20,20 @@
             rgb(245, 90, 150) 100%);
     padding: 1ch;
     gap: 1em;
-    border-bottom: 0.3ch solid deeppink;
+    border-bottom: 0.3ch solid var(--highlight-color);
 }
 
 .header h1 {
     font-family: DuckTales;
     font-size: 3em;
-    color: beige;
+    color: var(--text-color);
     text-shadow:
-        0 0 2px deeppink,
-        0 0 3px deeppink,
-        1px 1px 0 deeppink,
-        -1px 1px 0 deeppink,
-        1px -1px 0 deeppink,
-        -1px -1px 0 deeppink;
+        0 0 0.05ch var(--highlight-color),
+        0 0 0.05ch var(--highlight-color),
+        0.03ch 0.03ch 0 var(--highlight-color),
+        -0.03ch 0.03ch 0 var(--highlight-color),
+        0.03ch -0.03ch 0 var(--highlight-color),
+        -0.03ch -0.03ch 0 var(--highlight-color);
 }
 
 .header-img {
