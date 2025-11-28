@@ -2,12 +2,17 @@ import style from './TaskList.module.css';
 // import tasks from './mockup.json';
 import clsx from 'clsx';
 
-export default function TaskList({ tasks }) {
+export default function TaskList({ tasks, onTaskDelete, onTaskFinish }) {
+
+    // Les méthodes « onTaskDelete » et « onTaskFinish » permettent d'activer le code parent et elles sont directement transmise au composant enfant "TaskListItem"
 
     return (
         <ul className={style['task-list']}>
             {tasks.map(task => (
-                <TaskListItem key={task.id} {...task} />
+                <TaskListItem key={task.id} {...task} 
+                    onDelete={onTaskDelete}
+                    onFinish={onTaskFinish}
+                    />
             ))}
         </ul>
     );
@@ -18,7 +23,7 @@ function TaskListItemPriority({ priority }) {
         : (priority === 'low') && <span className={style['task-priority-low']}>Osef tier</span>
 }
 
-function TaskListItem({ id, name, desc, priority, isDone }) {
+function TaskListItem({ id, name, desc, priority, isDone, onDelete, onFinish }) {
 
     return (
         <li className={clsx(style['task-item'], isDone && style['task-done'])}>
@@ -33,8 +38,8 @@ function TaskListItem({ id, name, desc, priority, isDone }) {
                 {desc && (<p className={style['task-desc']}>{desc}</p>)}
             </div>
             <div className={style['task-item-action']}>
-                <button disabled={isDone}>Terminer</button>
-                <button>Supprimer</button>
+                <button onClick={() => onFinish(id)} disabled={isDone}>Terminer</button>
+                <button onClick={() => onDelete(id)}>Supprimer</button>
             </div>
         </li>
     );

@@ -22,11 +22,11 @@
 }
 
 .task-done {
-    --diagonal-spacing : 3em;
+    --diagonal-spacing : 1.5em;
     --diagonal-color : hotpink;
 
     background: repeating-linear-gradient(
-        -45deg,
+        -30deg,
         color-mix(in srgb, var(--diagonal-color) 30%, white) calc(var(--diagonal-spacing) * 1),
         color-mix(in srgb, var(--diagonal-color) 30%, white) calc(var(--diagonal-spacing) * 2),
         color-mix(in srgb, var(--diagonal-color) 10%, white) calc(var(--diagonal-spacing) * 2),
