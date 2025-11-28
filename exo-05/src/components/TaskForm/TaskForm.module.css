@@ -14,6 +14,7 @@
     flex-basis: 6em;
     color: darkmagenta;
 }
+
 .task-form>div>label::after {
     content: ':';
     margin-left: 0.5ch;
@@ -29,6 +30,12 @@
     padding: 0.2ch 0.5ch;
     color: deeppink;
     background-color: snow;
+
+    &.error {
+        border-color: crimson;
+        color: crimson;
+        background-color: cornsilk;
+    }
 }
 
 .task-form>div>input,
@@ -36,13 +43,15 @@
     flex-grow: 1;
     resize: none;
 }
+
 .task-form>div>textarea {
     height: 5em;
 }
+
 .task-form>div>select {
     flex-basis: 15em;
 }
- 
+
 .task-form :global(.space) {
     flex-grow: 1;
 }
