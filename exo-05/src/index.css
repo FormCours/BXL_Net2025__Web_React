@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "DuckTales";
+  src: url("./assets/fonts/DuckburgDucktales1987-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Waltograph";
+  src: url("./assets/fonts/waltograph42.otf");
+}
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+}
+
+button {
+  background-color: plum;
+  border: transparent 0.3ch solid;
+  border-radius: 1.5ch;
+  padding: 0.5ch 2ch;
+  color: darkmagenta;
+  text-transform: uppercase;
+  font-family: DuckTales;
+  font-size: 1em;
+}
+
+button:active {
+  background-color: pink;
+  border-color: darkmagenta;
+  color: darkmagenta;
+}
+
+button:disabled {
+  background-color: rgb(131, 131, 131);
+  border-color: rgb(131, 131, 131);
+  color: #dd66dd;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  button {
+    background-color: darkmagenta;
+    color: snow;
+  }
+
+  button:active {
+    background-color: pink;
+    border-color: darkmagenta;
+    color: darkmagenta;
+  }
+
+  button:disabled {
+    background-color: #b0809a ;
+    color: #f2b6d0;
+    border-color: #a36f8d;
+  }
+}

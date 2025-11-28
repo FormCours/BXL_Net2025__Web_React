@@ -1,0 +1,123 @@
+.header {
+    --text-color: beige;
+    --highlight-color: deeppink;
+    --logo-tickness: 1ch;
+
+    display: flex;
+    flex-direction: row;
+    height: 5em;
+    align-items: center;
+    background: linear-gradient(140deg,
+            rgb(120, 40, 160) 0%,
+            rgb(130, 45, 170) 10%,
+            rgb(145, 50, 175) 20%,
+            rgb(160, 55, 180) 30%,
+            rgb(175, 60, 185) 40%,
+            rgb(190, 65, 190) 50%,
+            rgb(200, 70, 185) 60%,
+            rgb(210, 75, 180) 70%,
+            rgb(225, 80, 170) 80%,
+            rgb(235, 85, 160) 90%,
+            rgb(245, 90, 150) 100%);
+    padding: 1ch;
+    gap: 1em;
+    border-bottom: 0.3ch solid var(--highlight-color);
+}
+
+.header h1 {
+    font-family: DuckTales;
+    font-size: 3em;
+    color: var(--text-color);
+    text-shadow:
+        0 0 0.05ch var(--highlight-color),
+        0 0 0.05ch var(--highlight-color),
+        0.03ch 0.03ch 0 var(--highlight-color),
+        -0.03ch 0.03ch 0 var(--highlight-color),
+        0.03ch -0.03ch 0 var(--highlight-color),
+        -0.03ch -0.03ch 0 var(--highlight-color);
+}
+
+.header-img {
+    object-fit: cover;
+    object-position: 40%;
+    height: 100%;
+    width: 100%;
+
+    border-radius: 10em;
+    border: 0.3ch solid var(--highlight-color);
+    transform: rotateY(180deg);
+}
+
+.logo-back .header-img {
+    transform: rotateY(0deg);
+}
+
+.logo-container {
+    height: 100%;
+    aspect-ratio: 1/1;
+
+    display: grid;
+    place-items: center;
+
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+}
+
+.logo-container:hover .logo {
+    transform: rotateY(180deg);
+}
+
+.logo {
+    position: relative;
+    transition: transform 2.5s cubic-bezier(0.3, 1.5, 0.7, -0.5);
+    transform-style: preserve-3d;
+    height: 100%;
+    width: 100%;
+}
+
+.logo-front,
+.logo-back {
+    position: absolute;
+    inset: 0;
+}
+
+.logo-front {
+    transform: rotateY(180deg) translateZ(calc(var(--logo-tickness) * -1));
+}
+
+.logo-edge {
+    position: absolute;
+    inset: 0;
+
+    width: var(--logo-tickness);
+    background: linear-gradient(to top,
+            var(--highlight-color) 0%,
+            var(--highlight-color) 10%,
+            color-mix(in srgb, var(--highlight-color) 90%, black) 50%,
+            var(--highlight-color) 90%,
+            var(--highlight-color) 100%);
+    left: 50%;
+    transform: translateZ(calc(var(--logo-tickness) * 0.5)) rotateY(90deg);
+}
+
+.logo-edge-front,
+.logo-edge-back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 10em;
+    background: radial-gradient(circle,
+            var(--highlight-color) 0%,
+            var(--highlight-color) 10%,
+            color-mix(in srgb, var(--highlight-color) 90%, black) 50%,
+            var(--highlight-color) 90%,
+            var(--highlight-color) 100%);
+}
+
+.logo-edge-back {
+    transform: translateZ(calc(var(--logo-tickness) * 0.9));
+}
+
+.logo-edge-front {
+    transform: translateZ(calc(var(--logo-tickness) * 0.1));
+}

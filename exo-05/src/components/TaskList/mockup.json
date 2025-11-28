@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "Exemple",
+        "desc": "Ceci est une description de tache",
+        "priority": "normal",
+        "isDone": false
+    },
+    {
+        "id": 3,
+        "name": "Acheter du Chocolat",
+        "desc": "Chocolat... Chocolat... Chocolat... ",
+        "priority": "urgent",
+        "isDone": false
+    },
+    {
+        "id": 5,
+        "name": "Exemple de tache terminé",
+        "desc": "Bah, c'est fait !",
+        "priority": "normal",
+        "isDone": true
+    },
+    {
+        "id": 7,
+        "name": "Exemple sans description",
+        "desc": null,
+        "priority": "low",
+        "isDone": false
+    }
+]

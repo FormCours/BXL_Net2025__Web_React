@@ -1,0 +1,71 @@
+.task-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    width: 100%;
+}
+
+.task-item {
+    display: flex;
+    flex-direction: row;
+    background-color: color-mix(in srgb, plum 20%, white);
+    padding: 0.5em;
+    border-radius: 0.5ch;
+}
+
+.task-item input[type="checkbox"]{
+    accent-color: hotpink;
+}
+
+.task-done {
+    --diagonal-spacing : 1.5em;
+    --diagonal-color : hotpink;
+
+    background: repeating-linear-gradient(
+        -30deg,
+        color-mix(in srgb, var(--diagonal-color) 30%, white) calc(var(--diagonal-spacing) * 1),
+        color-mix(in srgb, var(--diagonal-color) 30%, white) calc(var(--diagonal-spacing) * 2),
+        color-mix(in srgb, var(--diagonal-color) 10%, white) calc(var(--diagonal-spacing) * 2),
+        color-mix(in srgb, var(--diagonal-color) 10%, white) calc(var(--diagonal-spacing) * 3)
+    );
+}
+
+.task-item-info {
+    flex-grow: 1;
+}
+
+.task-item-action {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5ch;
+}
+
+.task-title {
+    font-weight: bold;
+    color: darkmagenta;
+}
+
+.task-desc {
+    color: fuchsia;
+    font-style: italic;
+}
+
+.task-priority-urgent::before, .task-priority-low::before {
+    content: '(';
+}
+.task-priority-urgent::after, .task-priority-low::after {
+    content: ')';
+}
+
+.task-priority-urgent {
+    color: crimson;
+    font-weight: bold;
+}
+
+.task-priority-low {
+    color:  steelblue;
+}
