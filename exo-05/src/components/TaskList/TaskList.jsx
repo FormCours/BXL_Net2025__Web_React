@@ -1,8 +1,8 @@
 import style from './TaskList.module.css';
-import tasks from './mockup.json';
+// import tasks from './mockup.json';
 import clsx from 'clsx';
 
-export default function TaskList() {
+export default function TaskList({ tasks }) {
 
     return (
         <ul className={style['task-list']}>
