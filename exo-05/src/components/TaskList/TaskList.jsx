@@ -24,7 +24,7 @@ function TaskListItem({ id, name, desc, priority, isDone }) {
         <li className={clsx(style['task-item'], isDone && style['task-done'])}>
             <div className={style['task-item-info']}>
                 <p>
-                    <input type="checkbox" name="task-done" checked={isDone} readOnly />
+                    <input type="checkbox" name="task-done" checked={isDone} readOnly tabIndex={-1} aria-label={`Tache « ${name} est ${isDone ? 'terminé' : 'en cours'}`} aria-disabled={true} />
                     {' '}
                     <span className={style['task-title']}>{name}</span>
                     {' '}

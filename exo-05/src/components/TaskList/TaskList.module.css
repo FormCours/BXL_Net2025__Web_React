@@ -12,13 +12,13 @@
 .task-item {
     display: flex;
     flex-direction: row;
-    background-color: rgba(221, 160, 221, 0.1);
+    background-color: color-mix(in srgb, plum 20%, white);
     padding: 0.5em;
     border-radius: 0.5ch;
 }
 
 .task-item input[type="checkbox"]{
-    accent-color: hotpink
+    accent-color: hotpink;
 }
 
 .task-done {
@@ -67,6 +67,5 @@
 }
 
 .task-priority-low {
-    color:  lightseagreen;
-    font-weight: lighter;
+    color:  steelblue;
 }
