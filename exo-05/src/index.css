@@ -36,7 +36,6 @@ p {
 body {
   margin: 0;
   display: flex;
-  min-width: 320px;
   min-height: 100vh;
 }
 
@@ -57,6 +56,12 @@ button:active {
   color: darkmagenta;
 }
 
+button:disabled {
+  background-color: rgb(131, 131, 131);
+  border-color: rgb(131, 131, 131);
+  color: #dd66dd;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -72,5 +77,11 @@ button:active {
     background-color: pink;
     border-color: darkmagenta;
     color: darkmagenta;
+  }
+
+  button:disabled {
+    background-color: rgb(100, 100, 100);
+    border-color: rgb(100, 100, 100);
+    color: plum;
   }
 }
