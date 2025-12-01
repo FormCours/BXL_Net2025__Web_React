@@ -26,9 +26,9 @@ export default function NameForm({ onSearchName }) {
 
             <button type='submit' disabled={isPending}>Chercher</button>
             <button type='reset'>Effacer</button>
-            {state.message && (
+            {/* {state.message && (
                 <span className={style['msg-form']}>{state.message}</span>
-            )}
+            )} */}
         </form>
     )
 }
