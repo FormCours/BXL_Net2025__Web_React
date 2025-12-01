@@ -1,0 +1,30 @@
+:root {
+  font-family: "Lucida Handwriting", "Segoe Script", "Viner Hand ITC", "Comic sans MS", cursive;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: snow;
+  background-color: midnightblue;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: midnightblue;
+    background-color: snow;
+  }
+}

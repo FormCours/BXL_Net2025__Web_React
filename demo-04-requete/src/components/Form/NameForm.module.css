@@ -1,0 +1,15 @@
+.search-form {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5ch;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.search-form input {
+    flex-grow: 1;
+}
+
+.search-form .msg-form {
+    flex-basis: 100%;
+}

@@ -1,0 +1,9 @@
+.header-style{
+    background-color: beige;
+    min-width: 100vw;
+    padding: 1em;
+}
+
+.header-style h1 {
+    margin: 0;
+}
